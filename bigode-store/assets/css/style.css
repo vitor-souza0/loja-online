@@ -1,0 +1,111 @@
+:root{
+    --color-white:#fff
+    --color-gray-100:#181818
+    --color-gray-300:#323232
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+}
+
+.navbar, .home, section {
+    max-width: 1280px;
+    margin: auto;
+}
+section{
+    padding: 60px 0px;
+}
+
+header {
+    
+    background-image: url(../img/banner.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+
+        & nav {
+            display: flex;
+            gap: 50px;
+
+            & a {
+                color: var(--color-white);
+                font-size: 18px;
+            }
+    
+            & a:first-child {
+                color: var(--color-white);
+                
+            }
+        }
+
+        & .btns {
+            display: flex;
+            gap: 16px;
+
+            & button {
+                padding: 11px 17.5px;
+                background: #3B44F6;
+                border-radius: 8px;
+                border: none;
+                color: var(--color-white);
+
+            }
+
+            & button:last-child {
+                background: transparent;
+                border: 1px solid var(--color-white);
+            }
+        }
+       
+    }
+
+    & .home {
+        height: calc(100vh - 190px);
+        color: var(--color-white);
+        margin-top: 114px;
+
+        & h1 {
+            margin-bottom: 26px;
+            color: var(--color-white);
+            font-size: 48px;
+        }
+
+        & p {
+            font-size: 24px;
+            margin-bottom: 64px;
+        }
+
+        & button {
+            padding: 16px 32px;
+                background: #3B44F6;
+                border-radius: 8px;
+                border: none;
+                color: var(--color-white);
+        }
+    }
+}
+main{
+    & .bigode-store{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        gap: 60px;
+
+        & .title, .card{
+            margin: auto;
+        }
+    }& .card{
+        display: flex;
+        gap :60px;
+    }
+}
